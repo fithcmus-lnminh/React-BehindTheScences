@@ -8,6 +8,7 @@ function App() {
 
   console.log("APP RUNNING"); //Check that component is re-executed
 
+  //re-create when App component re-rendered -> Button is re-rendered -> useCallback()
   const toggleParagraphHandler = () => {
     setShowParagraph((prevShowParagraph) => !prevShowParagraph);
   };

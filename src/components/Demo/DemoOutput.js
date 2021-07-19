@@ -7,4 +7,4 @@ const DemoOutput = (props) => {
   return <MyParagraph>{props.show ? "This is new paragraph" : ""}</MyParagraph>;
 };
 
-export default DemoOutput;
+export default React.memo(DemoOutput); //if props is not changed -> not re-rendered
